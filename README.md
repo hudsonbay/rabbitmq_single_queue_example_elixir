@@ -16,7 +16,7 @@ After that, you will see how the subscriber receives the message and shows it in
 
 So, the steps are:
 
-`git clone `
+`git clone https://github.com/hudsonbay/rabbitmq_single_queue_example_elixir.git`
 
 `mix deps.get`
 
