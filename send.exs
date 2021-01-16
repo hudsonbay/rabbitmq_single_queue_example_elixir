@@ -1,5 +1,5 @@
 # The first thing we need to do is to establish a connection with RabbitMQ server
-{:ok, connection} = AMQP.Connection.open
+{:ok, connection} = AMQP.Connection.open("amqps://cbopxdcr:bEXpHfdqo-xvSunhSvKoWRcntEJVKrlz@orangutan.rmq.cloudamqp.com/cbopxdcr")
 {:ok, channel} = AMQP.Channel.open(connection)
 
 # Next, before sending we need to make sure the recipient queue exists.

@@ -15,7 +15,7 @@ defmodule Receive do
   end
 end
 
-{:ok, connection} = AMQP.Connection.open
+{:ok, connection} = AMQP.Connection.open("amqps://cbopxdcr:bEXpHfdqo-xvSunhSvKoWRcntEJVKrlz@orangutan.rmq.cloudamqp.com/cbopxdcr")
 {:ok, channel} = AMQP.Channel.open(connection)
 AMQP.Queue.declare(channel, "my-queue")
 
